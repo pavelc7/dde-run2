@@ -6,12 +6,19 @@ fork of DDE_run, Win32 command line program to execute commands on a local serve
 dde_run2.exe is a Win32 command line program to execute commands on a local server via DDE (Dynamic Data Exchange). It tries to connect to a specified server with a specified topic. If it can't, it can run the specified program and then try again. If connected, up to 5 commands can be executed.
 
 Usage:
+
 -s Specify service name
+
 -t Specify topic
+
 -p Specify the path name to program if connection fails
+
 -r Specify request to execute on server
+
 -c Specify command to execute on server. Up to 5 allowed
+
 I use it for old programs which support only DDE.
+
 My case:
 Perl x32 has own DDE modules, but i can't find any module for Perl x64. So my perl program runs DDE_run2, DDE_run2 calls DDE API functions.
 
